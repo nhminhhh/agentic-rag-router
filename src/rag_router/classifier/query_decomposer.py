@@ -11,7 +11,7 @@ class SubQueryDecomposer:
     """
 
     COMPARISON_REGEX = re.compile(
-        r"(?:compare|contrast|difference\s+between|vs\.?)\s+([a-zA-Z0-9_\s]+?)\s+(?:and|versus|with)\s+([a-zA-Z0-9_\s]+)",
+        r"(?:(?:compare|contrast|difference\s+between)\s+)?([a-zA-Z0-9_\s]+?)\s+(?:and|versus|vs\.?|with)\s+([a-zA-Z0-9_\s]+)",
         re.IGNORECASE,
     )
 
