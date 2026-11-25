@@ -1,0 +1,1 @@
+{"benchmark_id": "rag_bench_77f71433", "date": "2026-11-25", "timestamp": "2026-11-25T15:48:38.197507+00:00", "qps_throughput": 7927.6, "latency_p50_ms": 0.141, "latency_p90_ms": 0.177, "grounding_pass_rate": 1.0}
