@@ -4,6 +4,9 @@ from pydantic import BaseModel, Field
 class RouterConfig(BaseModel):
     min_grounding_threshold: float = Field(default=0.65, description="Minimum grounding score before self-reflection trigger")
     enable_speculative_draft: bool = Field(default=True, description="Enable speculative low-latency drafting")
+    enable_reranker: bool = Field(default=True, description="Enable second-stage cross-encoder reranking")
+    enable_compression: bool = Field(default=False, description="Enable context window pruning")
+    max_context_chars: int = Field(default=1500, description="Max character budget for compressed context")
     dense_dimension: int = Field(default=128, description="Hashed dense embedding dimension")
     rrf_k: int = Field(default=60, description="Reciprocal Rank Fusion smoothing constant")
     max_sub_queries: int = Field(default=3, description="Maximum sub-queries for multi-hop decomposition")
