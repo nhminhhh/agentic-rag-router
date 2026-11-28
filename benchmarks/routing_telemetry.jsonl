@@ -1,3 +1,4 @@
 {"benchmark_id": "rag_bench_77f71433", "date": "2026-11-25", "timestamp": "2026-11-25T15:48:38.197507+00:00", "qps_throughput": 7927.6, "latency_p50_ms": 0.141, "latency_p90_ms": 0.177, "grounding_pass_rate": 1.0}
 {"benchmark_id": "rag_bench_f97bd9b5", "date": "2026-11-26", "timestamp": "2026-11-26T13:00:14.852124+00:00", "qps_throughput": 8519.2, "latency_p50_ms": 0.146, "latency_p90_ms": 0.179, "grounding_pass_rate": 1.0}
 {"benchmark_id": "rag_bench_c3a07048", "date": "2026-11-27", "timestamp": "2026-11-27T15:33:28.390433+00:00", "qps_throughput": 8490.7, "latency_p50_ms": 0.14, "latency_p90_ms": 0.188, "grounding_pass_rate": 1.0}
+{"benchmark_id": "rag_bench_0f7b6a18", "date": "2026-11-28", "timestamp": "2026-11-28T13:00:16.565919+00:00", "qps_throughput": 6587.5, "latency_p50_ms": 0.175, "latency_p90_ms": 0.267, "grounding_pass_rate": 1.0}
