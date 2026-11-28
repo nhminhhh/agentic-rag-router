@@ -28,3 +28,13 @@ def test_daily_routing_scenario_2026_11_27_d4f5dd():
     res = router.route_and_execute("Query regarding Node cluster d4f5dd")
     assert res.decision.confidence > 0.5
     assert len(res.retrieved_chunks) >= 1
+
+
+def test_daily_routing_scenario_2026_11_28_230816():
+    from rag_router.core.types import Chunk
+    from rag_router.engine import AdaptiveRAGRouter
+    router = AdaptiveRAGRouter()
+    router.index([Chunk(id="c_230816", content="Node cluster 230816 active for 2026-11-28")])
+    res = router.route_and_execute("Query regarding Node cluster 230816")
+    assert res.decision.confidence > 0.5
+    assert len(res.retrieved_chunks) >= 1
